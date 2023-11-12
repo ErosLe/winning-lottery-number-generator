@@ -5,11 +5,11 @@ const button = document.querySelector("button");
 function rando() {
   let numbers = [];
   let nr;
-  while (numbers.length < 6) {
-    //while (numbers.length < 5) {
+  //while (numbers.length < 6) {
+  while (numbers.length < 5) {
     // (nr = Math.floor(Math.random() * 10)),
-    nr = Math.floor(Math.random() * (46 - 1 + 1));
-    //nr = Math.floor(Math.random() * (91 - 1 + 1));
+    //nr = Math.floor(Math.random() * (46 - 1 + 1));
+    nr = Math.floor(Math.random() * (91 - 1 + 1));
     numbers.includes(nr) || nr <= 0 || nr > 90 ? nr : numbers.push(nr);
   }
   document.getElementById("random").innerHTML = numbers.join(" - ");
